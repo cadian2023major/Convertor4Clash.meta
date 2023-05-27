@@ -45,7 +45,7 @@ def custom_okgg_yaml_parser_2023_v2(data, fun_param):
             continue
         
         # 处理vless + h2 的情况
-        elif line.startswith("vless://") and ("h2" in line) and ("chatgpt" in line.lower()):
+        elif line.startswith("vless://") and ("h2" in line) and (("chatgpt" in line.lower()) or ("openai" in line.lower())):
             info = line[8:]
             parts = info.split("?", 1)
             
@@ -85,7 +85,7 @@ def custom_okgg_yaml_parser_2023_v2(data, fun_param):
         
         
         # 处理vless + grpc 的情况
-        elif line.startswith("vless://") and ("grpc" in line) and  ("chatgpt" in line.lower()):
+        elif line.startswith("vless://") and ("grpc" in line) and  (("chatgpt" in line.lower()) or ("openai" in line.lower())):
             info = line[8:]
             parts = info.split("?", 1)
             
