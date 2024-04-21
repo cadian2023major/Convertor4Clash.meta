@@ -23,6 +23,8 @@ ACL4SSR
 
 2023.5.2 为relay version添加针对openai关键字的节点过滤
 
+2024.4.21 动乱期结束后，为okgg重新适配
+
 ## tips
 
 在使用链式代理的时候，要小心WebRTC泄露真实IP的情况
